@@ -1,0 +1,28 @@
+﻿body {
+    background-color: grey
+}
+div {
+    background-color: lightgrey;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 20px;
+}
+.landingTitle img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+}
+
+.landingTitle h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+.wrapper {
+    font-size:30px;
+    padding: 10px;
+    text-align: center;
+}
+

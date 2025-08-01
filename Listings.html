@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+    <div id="landingTitle">
+        <h1 class="row">
+            <img src="/static/images/pets.jpg" width=200 height=200 />
+            RAY'S ANIMAL RESCUE AND SHELTER
+        </h1>
+
+        <a href="/">Home Page</a>
+    </div>
+    <div>
+        <h2 class="row">
+            PETS AVAILABLE FOR ADOPTION
+        </h2>
+    </div>
+    {% for pet in pets %}
+    <div>
+        <h3>{{ pet.Name }}</h3>
+        <p>Age: {{ pet.Age }}</p>
+        <p>Breed: {{ pet.Breed }}</p>
+        <img src="{{ pet.Image }}" alt="{{ pet.Name }}" width=100 height= 100 >
+    </div>
+    {% else %}
+    <p>No pets currently listed for Adoption.</p>
+    {% endfor %}
+
+</body>
+</html>
